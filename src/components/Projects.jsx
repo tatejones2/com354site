@@ -9,27 +9,6 @@ const projectsData = [
     tags: ['Drawing', 'Writing'],
     link: '/class_project_files/assignment1/COM354_assignment1.docx',
     image: '/class_project_files/assignment1/assignment1.png'
-  },
-  {
-    id: 2,
-    title: 'Task Manager App',
-    description: 'Streamlined task management application with local storage and smooth animations.',
-    tags: ['React', 'State Management', 'UX'],
-    link: '#'
-  },
-  {
-    id: 3,
-    title: 'Weather Dashboard',
-    description: 'Real-time weather information with responsive design and location-based features.',
-    tags: ['API Integration', 'React', 'CSS Grid'],
-    link: '#'
-  },
-  {
-    id: 4,
-    title: 'Portfolio Site',
-    description: 'This clean and minimal portfolio showcasing mid-century modern design principles.',
-    tags: ['React', 'Vite', 'Design'],
-    link: '#'
   }
 ]
 
