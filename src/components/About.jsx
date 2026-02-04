@@ -22,8 +22,8 @@ export default function About() {
           </div>
           <div className="profile-info">
             <h3>Tate Jones</h3>
-            <p className="profile-detail"><strong>Major:</strong> Computer Science</p>
-            <p className="profile-detail"><strong>Class:</strong> Junior</p>
+            <p className="profile-detail"><strong>Major:</strong> Information Technology</p>
+            <p className="profile-detail"><strong>Class:</strong> Sophomore</p>
             <p className="profile-detail"><strong>School:</strong> New Jersey Institute of Technology (NJIT)</p>
             <p className="profile-bio">
               Passionate about design, development, and creating meaningful digital experiences. 
