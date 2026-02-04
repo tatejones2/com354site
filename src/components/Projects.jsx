@@ -6,7 +6,8 @@ const projectsData = [
     title: 'Assignment 1',
     description: 'A picture of something that means something to me, with an explanation of what it means to me.',
     tags: ['Drawing', 'Writing'],
-    link: '/class_project_files/COM354_assignment1.docx'
+    link: '/class_project_files/assignment1/COM354_assignment1.docx',
+    image: '/class_project_files/assignment1/assignment1.png'
   },
   {
     id: 2,
@@ -39,6 +40,11 @@ export default function Projects() {
         <div className="projects-grid">
           {projectsData.map(project => (
             <div key={project.id} className="project-card">
+              {project.image && (
+                <div className="project-image">
+                  <img src={project.image} alt={project.title} />
+                </div>
+              )}
               <div className="project-header">
                 <h3 className="project-title">{project.title}</h3>
               </div>
