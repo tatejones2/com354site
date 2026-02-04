@@ -39,7 +39,6 @@
   max-width: 800px;
   text-align: center;
   z-index: 1;
-  animation: fadeInUp 0.8s ease;
 }
 
 @keyframes fadeInUp {
@@ -60,6 +59,29 @@
   margin-bottom: var(--spacing-xs);
   letter-spacing: -0.02em;
   line-height: 1.2;
+  animation: fadeInDown 0.8s ease 0.2s both;
+  cursor: default;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.hero-course-main::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--color-accent);
+  transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hero-course-main:hover {
+  transform: scale(1.02);
+}
+
+.hero-course-main:hover::after {
+  width: 100%;
 }
 
 .hero-course-title {
@@ -69,6 +91,29 @@
   margin-bottom: var(--spacing-md);
   letter-spacing: -0.02em;
   line-height: 1.2;
+  animation: fadeInDown 0.8s ease 0.4s both;
+  cursor: default;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.hero-course-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--color-accent);
+  transition: width 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hero-course-title:hover {
+  transform: scale(1.02);
+}
+
+.hero-course-title:hover::after {
+  width: 100%;
 }
 
 .hero-course-meta {
@@ -77,6 +122,29 @@
   margin-bottom: var(--spacing-2xl);
   font-weight: 500;
   letter-spacing: 0.1em;
+  animation: fadeInUp 0.8s ease 0.6s both;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-title {
@@ -85,6 +153,15 @@
   margin-bottom: var(--spacing-lg);
   font-weight: 600;
   letter-spacing: -0.03em;
+  animation: fadeInUp 0.8s ease 0.8s both;
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-2xl);
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease 1s both;
 }
 
 .hero-cta {
@@ -100,6 +177,7 @@
   transition: all 0.3s ease;
   letter-spacing: 0.05em;
   box-shadow: 0 4px 15px rgba(212, 113, 77, 0.2);
+  animation: fadeInUp 0.8s ease 1.2s both;
 }
 
 .hero-cta:hover {
