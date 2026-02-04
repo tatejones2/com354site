@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './Projects.css'
 
 const projectsData = [
@@ -32,19 +33,44 @@ const projectsData = [
   }
 ]
 
+function ProjectModal({ project, onClose }) {
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <button className="modal-close" onClick={onClose}>×</button>
+        {project.image && (
+          <div className="modal-image">
+            <img src={project.image} alt={project.title} />
+          </div>
+        )}
+        <div className="modal-body">
+          <h2>{project.title}</h2>
+          <p>{project.description}</p>
+          {project.link && project.link !== '#' && (
+            <a href={project.link} className="modal-download" download>
+              Download Project
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function Projects() {
+  const [selectedProject, setSelectedProject] = useState(null)
+
   return (
     <section id="projects" className="projects">
       <div className="projects-container">
         <h2 className="section-title">Featured Projects</h2>
         <div className="projects-grid">
           {projectsData.map(project => (
-            <div key={project.id} className="project-card">
-              {project.image && (
-                <div className="project-image">
-                  <img src={project.image} alt={project.title} />
-                </div>
-              )}
+            <div
+              key={project.id}
+              className="project-card"
+              onClick={() => setSelectedProject(project)}
+            >
               <div className="project-header">
                 <h3 className="project-title">{project.title}</h3>
               </div>
@@ -54,11 +80,17 @@ export default function Projects() {
                   <span key={tag} className="tag">{tag}</span>
                 ))}
               </div>
-              <a href={project.link} className="project-link">View Project →</a>
+              <button className="project-link">View Details →</button>
             </div>
           ))}
         </div>
       </div>
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </section>
   )
 }
