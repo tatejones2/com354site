@@ -13,17 +13,6 @@ export default function About() {
             <p>
               Built with React and Vite, this site showcases a clean, responsive design inspired by mid-century modern aesthetics. The portfolio emphasizes user experience, accessibility, and thoughtful design principles while maintaining clean, maintainable code.
             </p>
-            <div className="skills">
-              <h3>Technologies & Skills</h3>
-              <div className="skills-grid">
-                <span className="skill">React</span>
-                <span className="skill">JavaScript</span>
-                <span className="skill">CSS3</span>
-                <span className="skill">Responsive Design</span>
-                <span className="skill">Vite</span>
-                <span className="skill">Web Design</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
