@@ -4,24 +4,24 @@ export default function About() {
   return (
     <section id="about" className="about">
       <div className="about-container">
-        <h2 className="section-title">About Me</h2>
+        <h2 className="section-title">About This Project</h2>
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a passionate developer and designer focused on creating clean, intuitive digital experiences. With expertise in React and modern web technologies, I build responsive, user-centered applications.
+              This portfolio is a course project for <strong>COM 354: Designing Digital Media</strong> at NJIT in Spring 2026. The goal of this project is to demonstrate proficiency in modern web design and development practices.
             </p>
             <p>
-              My approach combines minimalist design principles with robust functionality, drawing inspiration from mid-century modern aesthetics to create timeless digital products.
+              Built with React and Vite, this site showcases a clean, responsive design inspired by mid-century modern aesthetics. The portfolio emphasizes user experience, accessibility, and thoughtful design principles while maintaining clean, maintainable code.
             </p>
             <div className="skills">
-              <h3>Core Skills</h3>
+              <h3>Technologies & Skills</h3>
               <div className="skills-grid">
                 <span className="skill">React</span>
                 <span className="skill">JavaScript</span>
                 <span className="skill">CSS3</span>
                 <span className="skill">Responsive Design</span>
-                <span className="skill">UX/UI</span>
                 <span className="skill">Vite</span>
+                <span className="skill">Web Design</span>
               </div>
             </div>
           </div>
