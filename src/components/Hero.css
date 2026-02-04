@@ -53,27 +53,29 @@
   }
 }
 
-.hero-title {
-  font-size: var(--font-size-3xl);
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-lg);
+.hero-course-main {
+  font-size: 3.5rem;
+  color: var(--color-accent);
   font-weight: 700;
-  letter-spacing: -0.03em;
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
-.hero-subtitle {
+.hero-course-meta {
   font-size: var(--font-size-xl);
   color: var(--color-text-light);
   margin-bottom: var(--spacing-2xl);
-  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: 0.1em;
 }
 
-.hero-course {
-  font-size: var(--font-size-large);
-  color: var(--color-accent);
+.hero-title {
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
   margin-bottom: var(--spacing-lg);
-  font-weight: 500;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  letter-spacing: -0.03em;
 }
 
 .hero-cta {
@@ -107,12 +109,16 @@
     padding: var(--spacing-xl) var(--spacing-md);
   }
 
+  .hero-course-main {
+    font-size: 2.5rem;
+  }
+
   .hero-title {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
   }
 
   .hero-subtitle {
-    font-size: var(--font-size-large);
+    font-size: 1rem;
   }
 }
 
@@ -122,13 +128,23 @@
     padding: var(--spacing-xl) var(--spacing-md);
   }
 
-  .hero-title {
+  .hero-course-main {
     font-size: 1.75rem;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .hero-course-meta {
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .hero-title {
+    font-size: 1.25rem;
     margin-bottom: var(--spacing-md);
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-bottom: var(--spacing-lg);
   }
 
