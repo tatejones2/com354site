@@ -68,6 +68,14 @@
   line-height: 1.6;
 }
 
+.hero-course {
+  font-size: var(--font-size-large);
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
 .hero-cta {
   background-color: var(--color-accent);
   color: white;
