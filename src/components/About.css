@@ -26,9 +26,71 @@
   font-size: 1rem;
 }
 
+.profile-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-2xl);
+  border-top: 2px solid var(--color-border);
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  border: 2px solid var(--color-border);
+  box-shadow: 0 4px 15px var(--color-shadow);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info h3 {
+  font-size: var(--font-size-2xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 700;
+}
+
+.profile-detail {
+  color: var(--color-text-light);
+  font-size: 1rem;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.6;
+}
+
+.profile-detail strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.profile-bio {
+  color: var(--color-text-light);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: var(--spacing-lg);
+  font-style: italic;
+}
+
 @media (max-width: 768px) {
   .about {
     padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .profile-section {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .profile-image {
+    max-width: 100%;
   }
 }
 
@@ -43,5 +105,13 @@
 
   .about-text p {
     margin-bottom: var(--spacing-md);
+  }
+
+  .profile-info h3 {
+    font-size: var(--font-size-xl);
+  }
+
+  .profile-detail {
+    font-size: 0.95rem;
   }
 }
