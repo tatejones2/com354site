@@ -3,10 +3,10 @@ import './Projects.css'
 const projectsData = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A modern React-based e-commerce site with product filtering and cart management.',
-    tags: ['React', 'JavaScript', 'CSS'],
-    link: '#'
+    title: 'Assignment 1',
+    description: 'A picture of something that means something to me, with an explanation of what it means to me.',
+    tags: ['Drawing', 'Writing'],
+    link: '/class_project_files/COM354_assignment1.docx'
   },
   {
     id: 2,
