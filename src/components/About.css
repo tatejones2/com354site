@@ -1,6 +1,7 @@
 .about {
   padding: var(--spacing-2xl) var(--spacing-lg);
   background-color: var(--color-light);
+  transition: background-color 0.3s ease;
 }
 
 .about-container {
@@ -44,6 +45,11 @@
   background-color: #f0f0f0;
   border: 2px solid var(--color-border);
   box-shadow: 0 4px 15px var(--color-shadow);
+  transition: background-color 0.3s ease;
+}
+
+.app.dark-mode .profile-image {
+  background-color: #333333;
 }
 
 .profile-image img {

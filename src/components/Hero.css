@@ -7,6 +7,11 @@
   padding: var(--spacing-2xl) var(--spacing-lg);
   position: relative;
   overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.app.dark-mode .hero {
+  background: linear-gradient(135deg, #1A1A1A 0%, #222222 100%);
 }
 
 .hero::before {

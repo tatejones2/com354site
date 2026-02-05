@@ -3,6 +3,11 @@
   color: white;
   padding: var(--spacing-2xl) var(--spacing-lg);
   margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.app.dark-mode .footer {
+  background-color: #1A1A1A;
 }
 
 .footer-content {

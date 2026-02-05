@@ -1,6 +1,11 @@
 .projects {
   padding: var(--spacing-2xl) var(--spacing-lg);
   background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.app.dark-mode .projects {
+  background-color: #1F1F1F;
 }
 
 .projects-container {
@@ -84,6 +89,11 @@
   font-size: 0.8rem;
   font-weight: 500;
   border-radius: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app.dark-mode .tag {
+  background-color: #333333;
 }
 
 .project-link {
@@ -140,6 +150,10 @@
   z-index: 2000;
   padding: var(--spacing-md);
   animation: fadeIn 0.3s ease;
+}
+
+.app.dark-mode .modal-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @keyframes fadeIn {

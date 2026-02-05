@@ -1,6 +1,10 @@
+import { useContext } from 'react'
+import { ThemeContext } from '../App'
 import './Header.css'
 
 export default function Header() {
+  const { darkMode, toggleDarkMode } = useContext(ThemeContext)
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id)
     element?.scrollIntoView({ behavior: 'smooth' })
@@ -14,6 +18,9 @@ export default function Header() {
           <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
           <button onClick={() => scrollToSection('projects')} className="nav-link">Projects</button>
           <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
+          <button onClick={toggleDarkMode} className="theme-toggle" title={darkMode ? 'Light mode' : 'Dark mode'}>
+            {darkMode ? '☀️' : '🌙'}
+          </button>
         </nav>
       </div>
     </header>
