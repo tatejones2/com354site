@@ -18,7 +18,7 @@ export default function About() {
 
         <div className="profile-section">
           <div className="profile-image">
-            <img src="/images/socon_champ_tate.jpg" alt="Tate Jones" />
+            <img src={`${import.meta.env.BASE_URL}images/socon_champ_tate.jpg`} alt="Tate Jones" />
           </div>
           <div className="profile-info">
             <h3>Tate Jones</h3>
