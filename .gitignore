@@ -12,7 +12,3 @@ dist
 dist-ssr
 *.local
 
-# Images folder (for local assets)
-public/images/*
-!public/images/.gitkeep
-
