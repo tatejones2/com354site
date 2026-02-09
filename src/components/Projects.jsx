@@ -8,7 +8,7 @@ const projectsData = [
     description: 'A picture of something that means something to me, with an explanation of what it means to me.',
     tags: ['Drawing', 'Writing'],
     link: '/class_project_files/assignment1/COM354_assignment1.docx',
-    image: '/class_project_files/assignment1/assignment1.png'
+    image: '/images/assignment1.png'
   }
 ]
 
