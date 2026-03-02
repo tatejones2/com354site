@@ -219,6 +219,7 @@
 
 .modal-body {
   padding: var(--spacing-2xl);
+  text-align: center;
 }
 
 .modal-body h2 {
