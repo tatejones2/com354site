@@ -9,6 +9,14 @@ const projectsData = [
     tags: ['Drawing', 'Writing'],
     link: '/class_project_files/assignment1/COM354_assignment1.docx',
     image: `${import.meta.env.BASE_URL}images/assignment1.png`
+  },
+  {
+    id: 2,
+    title: 'Assignment 3',
+    description: 'An audio project created with Audacity.',
+    tags: ['Audio', 'Audacity'],
+    link: '/class_project_files/assignment3/Assignment3.aup3',
+    image: `${import.meta.env.BASE_URL}images/assignment3.png`
   }
 ]
 
