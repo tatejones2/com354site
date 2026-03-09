@@ -12,6 +12,14 @@ const projectsData = [
   },
   {
     id: 2,
+    title: 'Assignment 2',
+    description: 'A creative visual project.',
+    tags: ['Visual'],
+    link: '#',
+    image: `${import.meta.env.BASE_URL}images/assignment2.png`
+  },
+  {
+    id: 3,
     title: 'Assignment 3',
     description: 'An audio project created with Audacity.',
     tags: ['Audio', 'Audacity'],
@@ -19,7 +27,7 @@ const projectsData = [
     image: `${import.meta.env.BASE_URL}images/assignment3.png`
   },
   {
-    id: 3,
+    id: 4,
     title: 'Assignment 4',
     description: 'A photography project containing 5 photos with different techniques.',
     tags: ['Photography'],
