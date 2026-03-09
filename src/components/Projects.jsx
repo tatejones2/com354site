@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Projects.css'
 
+// Projects data with all assignments
 const projectsData = [
   {
     id: 1,
@@ -13,8 +14,8 @@ const projectsData = [
   {
     id: 2,
     title: 'Assignment 2',
-    description: 'A creative visual project.',
-    tags: ['Visual'],
+    description: 'A link to my website for COM 354.',
+    tags: ['Web Design', 'GitHub'],
     link: '#',
     image: `${import.meta.env.BASE_URL}images/assignment2.png`
   },
