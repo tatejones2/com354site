@@ -17,6 +17,14 @@ const projectsData = [
     tags: ['Audio', 'Audacity'],
     link: '/class_project_files/assignment3/Assignment3.aup3',
     image: `${import.meta.env.BASE_URL}images/assignment3.png`
+  },
+  {
+    id: 3,
+    title: 'Assignment 4',
+    description: 'A photography project containing 5 photos with different techniques.',
+    tags: ['Photography'],
+    link: '/class_project_files/assignment4/PhotoAssignment.pptx',
+    image: `${import.meta.env.BASE_URL}images/assignment4.jpg`
   }
 ]
 
