@@ -38,10 +38,10 @@ const projectsData = [
   {
     id: 5,
     title: 'Assignment 5',
-    description: 'Assignment 5 project content coming soon.',
-    tags: ['In Progress'],
-    link: '#',
-    image: null
+    description: 'Assignment 5 video project.',
+    tags: ['Video'],
+    link: 'https://github.com/tatejones2/com354site/releases/download/assignment5-v1/Assignment5.mp4',
+    image: `${import.meta.env.BASE_URL}images/assignment5.JPG`
   }
 ]
 
