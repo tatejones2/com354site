@@ -34,6 +34,14 @@ const projectsData = [
     tags: ['Photography'],
     link: '/class_project_files/assignment4/PhotoAssignment.pptx',
     image: `${import.meta.env.BASE_URL}images/assignment4.jpg`
+  },
+  {
+    id: 5,
+    title: 'Assignment 5',
+    description: 'Assignment 5 project content coming soon.',
+    tags: ['In Progress'],
+    link: '#',
+    image: null
   }
 ]
 
