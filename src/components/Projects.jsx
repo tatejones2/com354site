@@ -43,6 +43,31 @@ const projectsData = [
     link: 'https://github.com/tatejones2/com354site/releases/download/assignment5-v1/Assignment5.mp4',
     image: `${import.meta.env.BASE_URL}images/assignment5.JPG`
   }
+  ,
+  {
+    id: 7,
+    title: 'Assignment 7',
+    description: 'A short video project.',
+    tags: ['Video'],
+    link: '/class_project_files/assignment7/MyMovie2.mp4',
+    image: `${import.meta.env.BASE_URL}images/assignment7.png`
+  },
+  {
+    id: 8,
+    title: 'Assignment 8',
+    description: 'A written news article submission.',
+    tags: ['Writing'],
+    link: '/class_project_files/assignment8/COM354_News_Article.docx',
+    image: `${import.meta.env.BASE_URL}images/assignment8.png`
+  },
+  {
+    id: 9,
+    title: 'Assignment 9',
+    description: 'A poster/illustration project.',
+    tags: ['Design', 'Illustration'],
+    link: '/class_project_files/assignment9/Blue White Playful Illustration Lifestyle Poster.png',
+    image: `${import.meta.env.BASE_URL}images/assignment9.png`
+  }
 ]
 
 function ProjectModal({ project, onClose }) {
